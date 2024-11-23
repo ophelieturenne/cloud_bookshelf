@@ -1,0 +1,24 @@
+<%# This view displays a list of books in the specified library. %>
+
+<%# Header Section %>
+<!--
+- Displays the library name at the top as a header.
+- Shows an "Add New Book" button only if the user has admin privileges (`update?` policy).
+-->
+
+<%# Books Table %>
+<!--
+- Renders a table with columns for:
+  - Book title, author, genre, year, quantity, status, and available actions.
+- Iterates through the `@books` collection and displays each book's details.
+-->
+
+<%# Actions Column %>
+<!--
+- "Show": Always available to view book details.
+- "Edit" and "Delete": Displayed only for users with admin permissions (`update?` and `destroy?` policies).
+- "Reserve" or "Read":
+  - "Read" is available for ebooks, linking to the book's reading page.
+  - "Reserve" is available for reservable books (hardcover with available quantity).
+  - If the book is not reservable, a "Not Reservable" label is displayed in muted text.
+-->

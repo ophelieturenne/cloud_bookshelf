@@ -1,0 +1,20 @@
+<%# This view displays the user's wishlist for a specific library. %>
+
+<%# Header Section %>
+<!--
+- Displays the header "My Wishlist" at the top of the page.
+-->
+
+<%# Wishlist Books Table Section %>
+<!--
+- If the user has books in their wishlist:
+  - Displays a table with columns for the book's title, author, genre, and available actions.
+  - Iterates through the `@wishlist_books` collection and lists each book.
+  - Includes a "View Book" button for each book that redirects to the book's details page.
+- If the wishlist is empty, displays a message informing the user that no books are in their wishlist.
+-->
+
+<%# Navigation Section %>
+<!--
+- Includes a "Back to Books" button that redirects to the list of books for the library.
+-->

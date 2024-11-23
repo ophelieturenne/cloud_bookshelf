@@ -1,2 +1,27 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# This view serves as the homepage for the logged-in user, displaying options and information relevant to their libraries and notifications. %>
+
+<%# Welcome Section %>
+<!--
+- Displays a welcome message that includes the user's email address.
+-->
+
+<%# Action Buttons %>
+<!--
+- Provides two primary actions:
+  - "Create a Library": Redirects to the form for creating a new library.
+  - "Access a Library": Redirects to the form for accessing an existing library by name and unique ID.
+-->
+
+<%# Your Libraries Section %>
+<!--
+- If the user has libraries:
+  - Displays a list of libraries the user has joined or created, each linking to the library's details page.
+- If the user has no libraries, displays a message encouraging them to join or create one.
+-->
+
+<%# Notifications Section %>
+<!--
+- If the user has notifications:
+  - Displays the 10 most recent notifications in descending order of creation.
+- If the user has no notifications, displays a message indicating the absence of notifications.
+-->

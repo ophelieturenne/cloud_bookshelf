@@ -1,0 +1,37 @@
+<%# This view displays a user-friendly dashboard for a specific library. %>
+
+<%# Header Section %>
+<!--
+- Displays a welcome message with the library's name.
+-->
+
+<%# Books Section %>
+<!--
+- If the library has books:
+  - Renders a table with columns for the title, author, genre, and actions.
+  - Each book title links to the book's detail page.
+  - Provides a "Reserve" button for each book, allowing users to reserve it.
+- If no books are available, displays a message stating that no books were found.
+-->
+
+<%# Notifications Section %>
+<!--
+- If notifications are present:
+  - Displays a list of all notifications for the library.
+- If no notifications are available, displays a message indicating the absence of notifications.
+-->
+
+<%# Wishlist Section %>
+<!--
+- If the user has books in their wishlist:
+  - Displays a list of books in the user's wishlist, each linking to the book's detail page.
+- If the wishlist is empty, displays a message encouraging the user to add books to their wishlist.
+-->
+
+<%# Approved Reservations Section %>
+<!--
+- If the user has approved reservations:
+  - Displays a list of approved reservations with the book's title and the approval date and time.
+  - Includes a message informing the user that they can retrieve the book from the library.
+- If there are no approved reservations, displays a message indicating no reservations are approved yet.
+-->

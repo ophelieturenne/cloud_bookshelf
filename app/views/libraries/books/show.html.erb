@@ -1,0 +1,38 @@
+<%# This view displays detailed information about a specific book and provides user actions based on its format and availability. %>
+
+<%# Book Details Section %>
+<!--
+- Displays the book's title, author, genre, year, and current status in a clean layout.
+- Shows the quantity of the book only if it is a hardcover format.
+-->
+
+<%# Ebook-Specific Action %>
+<!--
+- For ebooks, provides a "Read Book" button that redirects to the reading page.
+-->
+
+<%# Reservation Actions for Non-Ebook Formats %>
+<!--
+- If the user has a pending reservation for the book, it displays a success message and allows them to cancel the reservation.
+- If the reservation was denied, it shows an error message.
+- If the book is reservable, provides a "Reserve Book" button.
+- If the book is not available for reservation, displays an appropriate message in red.
+-->
+
+<%# Admin Actions Section %>
+<!--
+- Displays options for admins to edit or delete the book, based on their permissions (`update?` and `destroy?` policies).
+- Includes confirmation for the delete action.
+-->
+
+<%# Reviews Section %>
+<!--
+- Renders a partial to display all reviews for the book, including user comments and ratings.
+- If the user is logged in, provides a form to add a new review.
+- If the user is not logged in, shows a message prompting them to log in to leave a review.
+-->
+
+<%# Navigation Link %>
+<!--
+- Includes a "Back to Books" button to return to the list of books in the library.
+-->

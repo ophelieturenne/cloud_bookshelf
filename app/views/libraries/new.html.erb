@@ -1,0 +1,20 @@
+<%# This view renders a form for creating a new library. %>
+
+<%# Header Section %>
+<!--
+- Displays the header "Create a New Library" at the top of the page.
+-->
+
+<%# Error Messages Section %>
+<!--
+- If the `@library` object contains validation errors:
+  - Displays an alert box listing all error messages.
+-->
+
+<%# Form Section %>
+<!--
+- Uses `form_with` to create a form bound to the `@library` object.
+- Includes an input field for the library's name, marked as required.
+- Provides a submit button labeled "Create Library" to save the library.
+- Includes a "Cancel" link that redirects the user to the homepage (`root_path`).
+-->

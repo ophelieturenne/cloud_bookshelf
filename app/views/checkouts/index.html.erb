@@ -1,0 +1,10 @@
+<!-- This view displays a list of the user's checkouts. -->
+<!--
+- The header "My Checkouts" is displayed at the top.
+- If there are checkouts (`@checkouts`), they are displayed in a styled table with:
+  - Columns for the book title, library name, start date, due date, status, and actions.
+  - Links for each book and library lead to their respective show pages.
+  - The "Status" column displays "Overdue" in red if the `due_date` has passed and "On Time" in green otherwise.
+  - The "Actions" column includes a button to mark the book as returned, which sends a `PATCH` request to the `return_checkout_path`.
+- If no checkouts exist, a message "No checkouts found." is displayed.
+-->

@@ -1,0 +1,20 @@
+<%# This view renders a form for editing an existing review for a specific book. %>
+
+<%# Header Section %>
+<!--
+- Displays the header "Edit Review for [Book Title]" at the top.
+-->
+
+<%# Form Section %>
+<!--
+- Uses `form_with` to bind the form to the review object and its associated library and book.
+- If there are validation errors, displays them in an alert box with a list of error messages.
+
+- Input Fields:
+  - `rating`: A dropdown to select a rating between 1 and 5, with the current rating pre-selected.
+  - `comment`: A text area to edit the review's comment, marked as required.
+
+- Buttons:
+  - "Update Review": Submits the form to save the changes.
+  - "Cancel": Redirects back to the book's details page without saving changes.
+-->

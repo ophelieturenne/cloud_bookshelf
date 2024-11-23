@@ -11,6 +11,13 @@ gem "sprockets-rails"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
+
+gem 'pundit'                # For authorization
+gem 'faker'                 # For seed data
+gem 'active_storage_validations' # For Active Storage validations
+
+
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 

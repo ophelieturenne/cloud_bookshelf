@@ -1,0 +1,30 @@
+<%# This view renders the admin dashboard for a specific library. %>
+
+<%# Header Section %>
+<!-- Displays the name and unique ID of the library. -->
+
+<%# Books Section %>
+<!--
+- Displays a table listing all books in the library with details such as title, author, genre, year, quantity, and status.
+- Provides actions for each book based on user permissions:
+  - 'Show': View details of the book.
+  - 'Edit': Edit the book's details (if the user has `update?` permission).
+  - 'Delete': Remove the book from the library (if the user has `destroy?` permission).
+- Includes a button to add a new book to the library.
+- Displays a message if no books are found.
+-->
+
+<%# Notifications Section %>
+<!--
+- Includes a form for creating a new notification (reuses the `_form.html.erb` partial for notifications).
+- Displays a list of recent notifications with their content and timestamps.
+- Shows a message if no notifications are found.
+-->
+
+<%# Pending Reservations Section %>
+<!--
+- Displays a table of pending reservations for the library.
+- Lists details for each reservation, including the book title, the user who reserved it, and the reservation status.
+- Provides buttons to approve or deny each reservation.
+- Shows a message if there are no pending reservations.
+-->

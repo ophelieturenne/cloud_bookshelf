@@ -1,0 +1,16 @@
+<%# This view provides a form for accessing a specific library by its name and unique ID. %>
+
+<%# Header Section %>
+<!--
+- Displays a header "Access a Library" at the top of the page.
+-->
+
+<%# Form Section %>
+<!--
+- Uses `form_with` to create a form that submits a `POST` request to the `access_libraries_path`.
+- Includes two input fields:
+  - `name`: Text field for the library's name, marked as required.
+  - `unique_id`: Text field for the library's unique ID, also marked as required.
+- Provides a submit button labeled "Access Library" to submit the form.
+- Includes a "Cancel" button that redirects the user back to the list of libraries.
+-->

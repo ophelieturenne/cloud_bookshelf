@@ -1,0 +1,21 @@
+<%# This view renders a form for verifying admin credentials to access the library's admin dashboard. %>
+
+<%# Header Section %>
+<!--
+- Displays a header "Admin Dashboard Access" at the top of the page.
+- Includes a brief instruction asking the user to verify their admin credentials.
+-->
+
+<%# Form Section %>
+<!--
+- Uses `form_with` to create a form that submits to the `admin_dashboard_access_library_path` for the current library.
+- Includes two input fields:
+  - `email`: An email input field for the user's email address, marked as required.
+  - `password`: A password input field for the user's password, marked as required.
+- Provides a submit button labeled "Access Admin Dashboard" to submit the credentials for verification.
+-->
+
+<%# Navigation Section %>
+<!--
+- Includes a "Back to Library" button that redirects the user to the library's main page.
+-->

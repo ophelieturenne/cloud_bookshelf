@@ -1,0 +1,15 @@
+<%# This view displays the reviews for a specific book. %>
+
+<%# Header Section %>
+<!--
+- Displays the header "Reviews" at the top of the section.
+-->
+
+<%# Reviews List %>
+<!--
+- If there are reviews for the book:
+  - Iterates through the `@book.reviews` collection and displays each review as a list item.
+  - Shows the email of the user who posted the review, or "Anonymous User" if the user is not present.
+  - Displays the review's comment and rating (out of 5).
+- If no reviews exist, displays a message encouraging users to add the first review.
+-->
